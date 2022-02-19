@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "CanvasLayer",
+"class": "SceneChanger1",
+"language": "GDScript",
+"path": "res://Stage1/SceneChanger1.gd"
+}, {
+"base": "CanvasLayer",
+"class": "SceneChanger2",
+"language": "GDScript",
+"path": "res://Stage2/SceneChanger2.gd"
+}, {
+"base": "Node",
+"class": "SceneManager",
+"language": "GDScript",
+"path": "res://Stage3/SceneManager.gd"
+} ]
+_global_script_class_icons={
+"SceneChanger1": "",
+"SceneChanger2": "",
+"SceneManager": ""
+}
+
+[application]
+
+config/name="Scene Transitions Tutorial"
+config/icon="res://icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
